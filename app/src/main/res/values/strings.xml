@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">FindYourDoc</string>
+    <string name="eye_doc">Ophthalmologist</string>
+    <string name="skin_doc">Dermatologist</string>
+    <string name="general_doc">General practitioner</string>
+    <string name="neuro_doc">Neurologist</string>
+    <string name="physio_doc">Physiologist</string>
+    <string name="dentist_doc">Dentist</string>
+
+    <string-array name="doc_types">
+        <item>@string/eye_doc</item>
+        <item>@string/dentist_doc</item>
+        <item>@string/skin_doc</item>
+        <item>@string/general_doc</item>
+        <item>@string/physio_doc</item>
+        <item>@string/neuro_doc</item>
+    </string-array>
+
+    <string-array name="hour_types">
+        <item>@string/thirty_minutes</item>
+        <item>@string/one_hour</item>
+        <item>@string/two_hours</item>
+        <item>@string/one_day</item>
+    </string-array>
+
+    <string name="due_date">Due date:</string>
+    <string name="find_your_doc" translatable="false">FindYourDoc</string>
+    <string name="accept_default_settings">Accept default settings</string>
+    <string name="default_settings_message">Do you wish to set up the app with default settings?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="no_entries_message">Pretty empty here :)</string>
+    <string name="settings_saved">Your setting have been saved.</string>
+    <string name="required">Required*</string>
+    <string name="enter_doc_name">Enter doctor*</string>
+    <string name="create_doc_entry">Create Doc Entry</string>
+    <string name="find_your_doc_button_text" translatable="false">Find Your Doc!</string>
+    <string name="doc_input_mandatory">Please enter the name or type of your doctor.</string>
+    <string name="docname" translatable="false">Docname:</string>
+    <string name="enter_your_name">Your name*</string>
+    <string name="welcome">Welcome!</string>
+    <string name="enter_your_city">Your city*</string>
+    <string name="use_default_docs">Use default doctors to start with</string>
+    <string name="get_started">Get Started!</string>
+    <string name="welcome_to_findyourdoc">Welcome to FindYourDoc!</string>
+    <string name="welcome_alert_text">Hey there! Thanks for using FindYourDoc. Before you can get started, we need some additional information about you as a person. Please fill in the form as first step.</string>
+    <string name="incomplete_form">Mandatory fields are incomplete!</string>
+    <string name="default_city" translatable="false">Osnabrück</string>
+    <string name="toolbar_doc_creation_text">Create Doc Entry</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="next">Next</string>
+    <string name="pick_your_date">Pick Your Date</string>
+    <string name="finish">Finish</string>
+    <string name="pick_your_time">Pick Your Time</string>
+    <string name="delete_entry">Delete Entry</string>
+    <string name="delete_entry_warning_text">Do you really want to permanently delete this entry?</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="dont_show_this_message_again">Don\'t show this message again.</string>
+    <string name="main_menu_alert">Whats new?</string>
+    <string name="main_menu_alert_text">This is the main menu, you can create new doc entrys here, look at them (by clicking) or delete them by long clicking the certain entry.</string>
+    <string name="doc_already_exists">This name is already being used for another doc.</string>
+    <string name="pdfname" translatable="false">pdfname</string>
+    <string name="upload_document">Upload document</string>
+    <string name="doc_information">Doc Information</string>
+    <string name="dummy_date" translatable="false">31.12.1998</string>
+    <string name="dummy_time">11.25 am</string>
+    <string name="no_documents_uploaded">No documents uploaded yet</string>
+    <string name="hello">Hello</string>
+    <string name="save_changes">Save changes</string>
+    <string name="changes_saved">Changes have been saved.</string>
+    <string name="appointment_date">Appointment:</string>
+    <string name="appointment_time">Time:</string>
+    <string name="information_alert_title">Appointment Overview</string>
+    <string name="information_alert_text">In the Doc Information you will find everything about your created Doc entry. You can also change data as well as upload documents.</string>
+    <string name="thirty_minutes">30 minutes before</string>
+    <string name="one_hour">1 hour before</string>
+    <string name="two_hours">2 hours before</string>
+    <string name="one_day">1 day before</string>
+    <string name="cannotSaveName">Doctorname can not be saved due to empty name or already existing name. Please consider changing it.</string>
+    <string name="remindMeAt">Remind me:</string>
+    <string name="numberOfCharsExceeded">You exceeded the maximum number of characters in a the text input field. Please correct this.</string>
+    <string name="docAdded">Doc added successfully!</string>
+    <string name="somethingWentWrong">Ups! Something went wrong... Please try again.</string>
+    <string name="time_system_24h">Time in 24h system:</string>
+</resources>

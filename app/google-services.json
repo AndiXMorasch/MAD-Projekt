@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "576777802181",
+    "project_id": "findyourdoc-b4f74",
+    "storage_bucket": "findyourdoc-b4f74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576777802181:android:17ba08634431946df2fbac",
+        "android_client_info": {
+          "package_name": "de.hsos.findyourdoc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576777802181-ek9ncdcvduilutp6i6mmtkch7dvqo44g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW4nWaiV3iayhpfiXZnDQwpsbS7LeJDuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576777802181-ek9ncdcvduilutp6i6mmtkch7dvqo44g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

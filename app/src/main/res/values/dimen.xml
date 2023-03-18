@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TextSize -->
+    <dimen name="textSizeTitle">@dimen/_35sdp</dimen>
+    <dimen name="defaultTextSize">@dimen/_23sdp</dimen>
+    <dimen name="lowerTextSize">@dimen/_20sdp</dimen>
+    <dimen name="extraLowerTextSize">@dimen/_15sdp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin5sdp">@dimen/_5sdp</dimen>
+    <dimen name="margin10sdp">@dimen/_10sdp</dimen>
+    <dimen name="margin15sdp">@dimen/_15sdp</dimen>
+    <dimen name="margin20sdp">@dimen/_20sdp</dimen>
+    <dimen name="margin25sdp">@dimen/_25sdp</dimen>
+    <dimen name="margin30sdp">@dimen/_30sdp</dimen>
+</resources>

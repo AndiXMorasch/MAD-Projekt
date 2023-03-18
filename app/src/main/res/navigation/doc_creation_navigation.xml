@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/doc_creation_navigation"
+    app:startDestination="@id/nameAndMapFragment">
+
+    <fragment
+        android:id="@+id/nameAndMapFragment"
+        android:name="de.hsos.findyourdoc.fragments.NameAndMapFragment"
+        android:label="fragment_name_and_map"
+        tools:layout="@layout/fragment_name_and_map" >
+        <action
+            android:id="@+id/action_nameAndMapFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="de.hsos.findyourdoc.fragments.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_calendarFragment_to_timeFragment"
+            app:destination="@id/timeFragment" />
+        <action
+            android:id="@+id/action_calendarFragment_to_nameAndMapFragment"
+            app:destination="@id/nameAndMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timeFragment"
+        android:name="de.hsos.findyourdoc.fragments.TimeFragment"
+        android:label="fragment_time"
+        tools:layout="@layout/fragment_time" >
+        <action
+            android:id="@+id/action_timeFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+</navigation>

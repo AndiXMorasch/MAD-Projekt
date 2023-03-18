@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".activities.DocInformation">
+
+    <TextView
+        android:id="@+id/docInformationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin15sdp"
+        android:fontFamily="@font/viga"
+        android:shadowColor="@color/black"
+        android:shadowDx="6"
+        android:shadowDy="3"
+        android:shadowRadius="10"
+        android:text="@string/doc_information"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textSizeTitle"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/docNameTextInputFieldLayoutDocInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin10sdp"
+        android:layout_marginTop="@dimen/margin15sdp"
+        android:layout_marginEnd="@dimen/margin10sdp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:counterTextColor="@color/white"
+        app:helperTextTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/docInformationTextView"
+        app:startIconDrawable="@drawable/ic_baseline_person_add_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/docNameTextInputFieldEditTextDocInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/docname" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/dateTextViewDocInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin10sdp"
+        android:fontFamily="@font/viga"
+        android:text="@string/dummy_date"
+        android:textSize="@dimen/lowerTextSize"
+        app:layout_constraintBottom_toBottomOf="@id/editDateButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/docNameTextInputFieldLayoutDocInformation"
+        app:layout_constraintTop_toTopOf="@+id/editDateButton" />
+
+    <ImageView
+        android:id="@+id/editDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin5sdp"
+        android:layout_marginEnd="@dimen/margin10sdp"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/docNameTextInputFieldLayoutDocInformation" />
+
+    <TextView
+        android:id="@+id/timeTextViewDocInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin10sdp"
+        android:fontFamily="@font/viga"
+        android:text="@string/dummy_time"
+        android:textSize="@dimen/lowerTextSize"
+        app:layout_constraintBottom_toBottomOf="@id/editTimeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateTextViewDocInformation"
+        app:layout_constraintTop_toTopOf="@id/editTimeButton" />
+
+    <ImageView
+        android:id="@+id/editTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10sdp"
+        android:layout_marginEnd="@dimen/margin10sdp"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editDateButton" />
+
+    <TextView
+        android:id="@+id/remindTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin10sdp"
+        android:layout_marginTop="@dimen/margin10sdp"
+        android:fontFamily="@font/viga"
+        android:text="@string/remindMeAt"
+        android:textSize="@dimen/lowerTextSize"
+        app:layout_constraintBottom_toTopOf="@id/remindTimeDropDownContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTimeButton" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/remindTimeDropDownContainer"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin10sdp"
+        android:layout_marginEnd="@dimen/margin10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/remindTimeTextView">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/upload_PDF_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin15sdp"
+        android:text="@string/upload_document"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/remindTimeDropDownContainer" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pdfRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@id/saveChangesButton"
+        app:layout_constraintTop_toBottomOf="@id/upload_PDF_Button" />
+
+    <TextView
+        android:id="@+id/nothingToShowPDFTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/viga"
+        android:text="@string/no_documents_uploaded"
+        android:textSize="@dimen/lowerTextSize"
+        app:layout_constraintBottom_toTopOf="@+id/saveChangesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upload_PDF_Button" />
+
+    <Button
+        android:id="@+id/saveChangesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:enabled="false"
+        android:text="@string/save_changes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
